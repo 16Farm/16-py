@@ -1,6 +1,6 @@
 import time
 
-version = '0'
+version = '2.0.0'
 
 # request defaults
 gb_url = 'https://ishin-global.aktsk.com'

@@ -38,7 +38,7 @@ def subfolders():
 
 def getVersionCodes():
     try:
-        r = requests.get('https://raw.githubusercontent.com/K1mpl0s/16-pc/master/versions.json')
+        r = requests.get('https://raw.githubusercontent.com/K1mpl0s/16-py/master/versions.json')
         jso = r.json()
         if str(jso['sixteen']) != config.version:
             print(Fore.CYAN + '16 > new update! (' + config.version + '/' + str(jso['sixteen']) + ')' + Fore.LIGHTGREEN_EX + '\nwould you like to open discord? Press ENTER if so.\n\n' + Fore.RESET + str(jso['discord']))
