@@ -27,19 +27,25 @@ def guid():
     return [str(uuid.uuid4()), UniqueId]
 ####################################################################
 def basic(identifier):
-    #remove next-lines
-    if '\n' in identifier:
-        temp = identifier.replace('\n', '')
+    #check if from other bots
+    if ':' not in identifier:
+        #remove next-lines
+        if '\n' in identifier:
+            temp = identifier.replace('\n', '')
+        else:
+            temp = identifier
+        #append blanks to make size of 160
+        if len(temp) < 159:
+            while len(temp) < 159:
+                temp = temp.ljust(159, '\u0008')
+        #flip identifier
+        decode = base64.b64decode(temp).decode()
+        part = decode.split(':')
+        temp = part[1] + ':' + part[0]
     else:
-        temp = identifier
-    #append blanks to make size of 160
-    if len(temp) < 159:
-        while len(temp) < 159:
-            temp = temp.ljust(159, '\u0008')
-    #flip identifier
-    decode = base64.b64decode(temp).decode()
-    part = decode.split(':')
-    temp = part[1] + ':' + part[0]
+        #flip identifier
+        part = identifier.split(':')
+        temp = part[1] + ':' + part[0]
     #basic
     basic = base64.b64encode(temp.encode()).decode()
     return basic
@@ -98,7 +104,6 @@ def get_key_and_iv(
 
     mdf = getattr(__import__('hashlib', fromlist=[msgdgst]), msgdgst)
     password = password.encode('ascii', 'ignore')  # convert to ASCII
-
     try:
         maxlen = klen + ilen
         keyiv = mdf(password + salt).digest()

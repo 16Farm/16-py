@@ -1,8 +1,8 @@
 import requests
-import config
-import crypto
 import json
 import random
+import config
+import utils.crypto as crypto
 
 def register(ver, os, ad = None, unique = None, key = None):
     if os == 'android':
@@ -76,7 +76,7 @@ def login(ver, os, basic, first, key = None):
     if ver == 'gb':
         url = config.gb_url + '/auth/sign_in'
         if first:
-            code = '////'
+            code = config.gb_code
         else:
             code = config.gb_code
     else:
