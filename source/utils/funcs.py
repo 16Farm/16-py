@@ -1,4 +1,3 @@
-import sys
 import requests
 import json
 import os as fs
@@ -18,6 +17,19 @@ import api.auth as auth
 import api.outgame as outgame
 import api.ingame as ingame
 
+def saveSettings(data):
+    f = open('../settings.json', 'w')
+    f.write(json.dumps(data))
+    f.close()
+    return True
+
+def getSettings():
+    f = open('../settings.json', 'r')
+    txt = f
+    settings = json.load(txt)
+    f.close()
+    return settings
+
 def subfolders():
     if not fs.path.isdir('../saves'):
         try:
@@ -35,6 +47,27 @@ def subfolders():
             fs.mkdir('./data') # inside source
         except:
             print('unable to create "data" directory.')
+    if fs.path.isfile('../settings.json') != True:
+        settings = {
+            'stam_use_stone': True,
+            'team_builder': True,
+            'display_drops': True,
+            'display_ids': True,
+            'display_only_ids': False,
+            'display_stage_names': True,
+            'drop_bonus': False,
+            'potential_node': False,
+            'stam_use_item': False,
+            'colors': {
+                'commands': 'green',
+                'descriptions': 'green',
+                'error': 'red',
+                'success': 'green',
+                'message': 'yellow',
+                'drops': 'cyan'
+            }
+        }
+        saveSettings(settings)
 
 def getVersionCodes():
     try:
@@ -131,7 +164,7 @@ def createSaveFile(iden):
     if len(str(save)) >= 1:
         if fs.path.isfile('../saves/' + str(save) + '.txt'):
             print(Fore.LIGHTRED_EX + 'save name already exists!')
-            createSaveFile(config.acc_ver, config.acc_os, iden)
+            createSaveFile(iden)
         else:
             if ' ' not in save and '\n' not in save:
                 f = open('../saves/' + str(save) + '.txt', 'w')

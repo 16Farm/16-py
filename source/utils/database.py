@@ -39,7 +39,10 @@ def download(ver, token, secret, version):
 def query(db, table, where, amount):
     con = sqlite3.connect('./data/' + db)
     cur = con.cursor()
-    query = "SELECT * FROM " + table + " WHERE " + where
+    if where != None:
+        query = "SELECT * FROM " + table + " WHERE " + where
+    else:
+        query = "SELECT * FROM " + table
     cur.execute(query)
     if amount == 0:
         results = cur.fetchone()

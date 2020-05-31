@@ -1,7 +1,7 @@
 from colorama import init, Fore, Style
 init(autoreset=True)
 
-errors = ['invalid_token', 'client_version/new_client_version_exists', 'oauth2_mac_rails/link_code_not_found', 'already_accepted_mission_rewards', 'act_is_not_enough', 'the_number_of_cards_must_be_less_than_or_equal_to_the_capacity', 'no_condition_to_try_the_quest_is_fulfilled', 'invalid_area_conditions_potential_releasable', 'active_record/record_not_found', 'invalid_only_card_quest_limitation_conditions', 'invalid_requiring_card_quest_limitation_conditions', 'z_battle_check_point_does_not_exist', 'invalid_only_element_quest_limitation_conditions', 'invalid_allowed_category_quest_limitation_conditions', 'invalid_requiring_element_quest_limitation_conditions', 'visited_count_of_the_quest_reaches_the_limit', 'oauth2_mac_rails/client_transferred', 'act_is_already_maximum', 'already_linked_facebook_by_others', 'user_comeback_campaign_is_not_found']
+errors = ['invalid_token', 'client_version/new_client_version_exists', 'oauth2_mac_rails/link_code_not_found', 'already_accepted_mission_rewards', 'act_is_not_enough', 'the_number_of_cards_must_be_less_than_or_equal_to_the_capacity', 'no_condition_to_try_the_quest_is_fulfilled', 'invalid_area_conditions_potential_releasable', 'active_record/record_not_found', 'invalid_only_card_quest_limitation_conditions', 'invalid_requiring_card_quest_limitation_conditions', 'z_battle_check_point_does_not_exist', 'invalid_only_element_quest_limitation_conditions', 'invalid_allowed_category_quest_limitation_conditions', 'invalid_requiring_element_quest_limitation_conditions', 'visited_count_of_the_quest_reaches_the_limit', 'oauth2_mac_rails/client_transferred', 'act_is_already_maximum', 'already_linked_facebook_by_others', 'user_comeback_campaign_is_not_found', 'max_act_is_not_enough']
 
 def Handler(source, response):
     global errors
@@ -45,6 +45,8 @@ def Handler(source, response):
                 print(Fore.LIGHTRED_EX + 'Facebook is linked to another dokkan!')
             if response['error']['code'] == 'user_comeback_campaign_is_not_found':
                 print(Fore.LIGHTRED_EX + 'No hercule/comeback campaign active!')
+            if response['error']['code'] == 'max_act_is_not_enough':
+                print(Fore.LIGHTRED_EX + 'Required max stamina not enough!')
         else:
             print(Fore.LIGHTRED_EX + str(source) + ' > error occurred:')
             print(Fore.LIGHTRED_EX + '"' + str(response) + '"\nPlease send a screenshot of this error to the Discord.')

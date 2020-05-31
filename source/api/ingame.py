@@ -35,13 +35,13 @@ def user(ver, os, token, secret, first):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.get(url, data=None, headers=headers)
@@ -67,13 +67,13 @@ def cards(ver, os, token, secret):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.get(url, data=None, headers=headers)
@@ -99,13 +99,13 @@ def news(ver, os, token, secret):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.get(url, data=None, headers=headers)
@@ -131,13 +131,13 @@ def banners(ver, os, token, secret):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.get(url, data=None, headers=headers)
@@ -163,13 +163,13 @@ def events(ver, os, token, secret):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.get(url, data=None, headers=headers)
@@ -195,13 +195,13 @@ def changeName(ver, os, token, secret, name):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     data = {'user':{'name': name}}
@@ -228,13 +228,13 @@ def capacity(ver, os, token, secret):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.post(url, data=None, headers=headers)
@@ -260,13 +260,13 @@ def dashStatus(ver, os, token, secret):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.get(url, data=None, headers=headers)
@@ -292,13 +292,13 @@ def summon(ver, os, token, secret, id, course):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.post(url, data=None, headers=headers)
@@ -324,13 +324,13 @@ def gifts(ver, os, token, secret):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.get(url, data=None, headers=headers)
@@ -356,13 +356,13 @@ def acceptGifts(ver, os, token, secret, gift):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     data = {'gift_ids': gift}
@@ -389,13 +389,13 @@ def missions(ver, os, token, secret):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.get(url, data=None, headers=headers)
@@ -421,13 +421,13 @@ def acceptMissions(ver, os, token, secret, mission):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     data = {'mission_ids': mission}
@@ -454,13 +454,13 @@ def actRefill(ver, os, token, secret):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.put(url, data=None, headers=headers)
@@ -486,13 +486,13 @@ def sell(ver, os, token, secret, card):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     data = {'card_ids': card}
@@ -519,13 +519,13 @@ def setWallpaper(ver, os, token, secret, wallpaper):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     data = {'user': {'wallpaper_item_id': wallpaper}}
@@ -552,13 +552,13 @@ def quests(ver, os, token, secret):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.get(url, data=None, headers=headers)
@@ -584,13 +584,13 @@ def getSupports(ver, os, token, secret, stage, difficulty):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.get(url, data=None, headers=headers)
@@ -616,13 +616,13 @@ def getMedals(ver, os, token, secret):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.get(url, data=None, headers=headers)
@@ -648,13 +648,13 @@ def getItems(ver, os, token, secret):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.get(url, data=None, headers=headers)
@@ -680,13 +680,13 @@ def dragonballs(ver, os, token, secret):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.get(url, data=None, headers=headers)
@@ -712,13 +712,13 @@ def friends(ver, os, token, secret):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.get(url, data=None, headers=headers)
@@ -744,13 +744,13 @@ def findFriend(ver, os, token, secret, id):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.get(url, data=None, headers=headers)
@@ -776,13 +776,13 @@ def addFriend(ver, os, token, secret, id):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.post(url, headers=headers)
@@ -808,13 +808,13 @@ def acceptFriend(ver, os, token, secret, id):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.put(url, headers=headers)
@@ -840,13 +840,13 @@ def getTeams(ver, os, token, secret):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.get(url, data=None, headers=headers)
@@ -872,13 +872,13 @@ def setTeam(ver, os, token, secret, team, cards):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     data = {'selected_team_num': int(team), 'user_card_teams': cards}
@@ -904,9 +904,10 @@ def startStage(ver, os, token, secret, stage, difficulty, friend, friend_card):
         asset = config.file_ts2
         db = config.db_ts2
 
-    APIToken = ''.join(random.choice(list('abcdefghijklmnopqrstuvwxyzBCDEFGHIKLMNOPQRUVWXYZ123456789-_')) for i in range(63))
+    #APIToken = ''.join(random.choice(list('abcdefghijklmnopqrstuvwxyzBCDEFGHIKLMNOPQRUVWXYZ123456789-_')) for i in range(63))
 
     decks = getTeams(ver, os, token, secret)
+    #27002:2
 
     if len(str(friend)) >= 4:
         sign = json.dumps({'difficulty': int(difficulty), 'friend_id': int(friend), 'is_playing_script': True, 'selected_team_num': int(decks['selected_team_num']), 'support_leader': {'card_id': int(friend_card), 'exp': 0, 'optimal_awakening_step': 0, 'released_rate': 0}})
@@ -1013,13 +1014,13 @@ def zRankings(ver, os, token, secret, eza):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.get(url, data=None, headers=headers)
@@ -1045,13 +1046,13 @@ def zSupports(ver, os, token, secret, eza):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.get(url, data=None, headers=headers)
@@ -1184,13 +1185,13 @@ def unpublished(ver, os, token, secret):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': '////',
         'X-DatabaseVersion': '////',
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.get(url, data=None, headers=headers)
@@ -1216,13 +1217,13 @@ def train(ver, os, token, secret, card, cards, field, items):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     data = {
@@ -1253,13 +1254,13 @@ def special(ver, os, token, secret):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.get(url, data=None, headers=headers)
@@ -1285,13 +1286,13 @@ def homeResources(ver, os, token, secret):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.get(url, data=None, headers=headers)
@@ -1317,13 +1318,13 @@ def bonus(ver, os, token, secret):
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.get(url, data=None, headers=headers)
@@ -1336,26 +1337,26 @@ def babaItems(ver, os, token, secret, currency):
     else:
         dua = config.device_agent2
     if ver == 'gb':
-        url = config.gb_url + '/shops/' + currency + '/items'
-        auth = crypto.mac(ver, token, secret, 'GET', '/shops/' + currency + '/items')
+        url = config.gb_url + '/shops/' + str(currency) + '/items'
+        auth = crypto.mac(ver, token, secret, 'GET', '/shops/' + str(currency) + '/items')
         code = config.gb_code
         asset = config.file_ts1
         db = config.db_ts1
     else:
-        url = config.jp_url + '/shops/' + currency + '/items'
-        auth = crypto.mac(ver, token, secret, 'GET', '/shops/' + currency + '/items')
+        url = config.jp_url + '/shops/' + str(currency) + '/items'
+        auth = crypto.mac(ver, token, secret, 'GET', '/shops/' + str(currency) + '/items')
         code = config.jp_code
         asset = config.file_ts2
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     r = requests.get(url, data=None, headers=headers)
@@ -1368,31 +1369,104 @@ def babaBuy(ver, os, token, secret, currency, id, amount):
     else:
         dua = config.device_agent2
     if ver == 'gb':
-        url = config.gb_url + '/shops/' + currency + '/items/' + id + '/buy'
-        auth = crypto.mac(ver, token, secret, 'POST', '/shops/' + currency + '/items/' + id + '/buy')
+        url = config.gb_url + '/shops/' + str(currency) + '/items/' + str(id) + '/buy'
+        auth = crypto.mac(ver, token, secret, 'POST', '/shops/' + str(currency) + '/items/' + str(id) + '/buy')
         code = config.gb_code
         asset = config.file_ts1
         db = config.db_ts1
     else:
-        url = config.jp_url + '/shops/' + currency + '/items/' + id + '/buy'
-        auth = crypto.mac(ver, token, secret, 'POST', '/shops/' + currency + '/items/' + id + '/buy')
+        url = config.jp_url + '/shops/' + str(currency) + '/items/' + str(id) + '/buy'
+        auth = crypto.mac(ver, token, secret, 'POST', '/shops/' + str(currency) + '/items/' + str(id) + '/buy')
         code = config.jp_code
         asset = config.file_ts2
         db = config.db_ts2
     headers = {
         'X-Platform': os,
-        'X-Language': config.lang,
         'X-ClientVersion': code,
         'X-AssetVersion': asset,
         'X-DatabaseVersion': db,
         'Content-Type': 'application/json',
         'Accept': '*/*',
         'Authorization': auth,
+        'X-Language': config.lang,
         'User-Agent': dua
         }
     data = {
         'bought_num': int(amount)
     }
+    r = requests.post(url, data=json.dumps(data), headers=headers)
+    return r.json()
+
+'''
+{
+	"gain_exchange_point": 500,
+	"exchange_point": 91193,
+	"missions": []
+}
+'''
+# exchange for specific products.
+def babaSell(ver, os, token, secret, exchange, items, quantity = None):
+    if os == 'android':
+        dua = config.device_agent1
+    else:
+        dua = config.device_agent2
+    if ver == 'gb':
+        url = config.gb_url + '/' + str(exchange) + '/exchange'
+        auth = crypto.mac(ver, token, secret, 'POST', '/' + str(exchange) + '/exchange')
+        code = config.gb_code
+        asset = config.file_ts1
+        db = config.db_ts1
+    else:
+        url = config.jp_url + '/' + str(exchange) + '/exchange'
+        auth = crypto.mac(ver, token, secret, 'POST', '/' + str(exchange) + '/exchange')
+        code = config.jp_code
+        asset = config.file_ts2
+        db = config.db_ts2
+    headers = {
+        'X-Platform': os,
+        'X-ClientVersion': code,
+        'X-AssetVersion': asset,
+        'X-DatabaseVersion': db,
+        'Content-Type': 'application/json',
+        'Accept': '*/*',
+        'Authorization': auth,
+        'X-Language': config.lang,
+        'User-Agent': dua
+        }
+    if exchange == 'cards':
+        data = {
+            'card_ids': items
+        }
+    if exchange == 'training_items':
+        data = {
+            'quantity': quantity,
+            'training_item_id': items
+        }
+    if exchange == 'training_fields':
+        data = {
+            'quantity': quantity,
+            'training_field_id': items
+        }
+    if exchange == 'awakening_items':
+        data = {
+            'awakening_item_id': items,
+            'quantity': quantity,
+        }
+    if exchange == 'support_items':
+        data = {
+            'quantity': quantity,
+            'support_item_id': items
+        }
+    if exchange == 'treasure_items':
+        data = {
+            'quantity': quantity,
+            'treasure_item_id': items
+        }
+    if exchange == 'potential_items':
+        data = {
+            'potential_item_id': items,
+            'quantity': quantity,
+        }
     r = requests.post(url, data=json.dumps(data), headers=headers)
     return r.json()
 
@@ -1551,14 +1625,14 @@ def favorite(ver, os, token, secret, uniqueCard):
     else:
         dua = config.device_agent2
     if ver == 'gb':
-        url = config.gb_url + '/cards/' + uniqueCard + '/favorite'
-        auth = crypto.mac(ver, token, secret, 'PUT', '/cards/' + uniqueCard + '/favorite')
+        url = config.gb_url + '/cards/' + str(uniqueCard) + '/favorite'
+        auth = crypto.mac(ver, token, secret, 'PUT', '/cards/' + str(uniqueCard) + '/favorite')
         code = config.gb_code
         asset = config.file_ts1
         db = config.db_ts1
     else:
-        url = config.jp_url + '/cards/' + uniqueCard + '/favorite'
-        auth = crypto.mac(ver, token, secret, 'PUT', '/cards/' + uniqueCard + '/favorite')
+        url = config.jp_url + '/cards/' + str(uniqueCard) + '/favorite'
+        auth = crypto.mac(ver, token, secret, 'PUT', '/cards/' + str(uniqueCard) + '/favorite')
         code = config.jp_code
         asset = config.file_ts2
         db = config.db_ts2
@@ -1716,14 +1790,14 @@ def claimRandomLogin(ver, os, token, secret, elapsed, expire, id, gtoken):
     else:
         dua = config.device_agent2
     if ver == 'gb':
-        url = config.gb_url + '/random_login_bonuses/' + id + '/accept'
-        auth = crypto.mac(ver, token, secret, 'POST', '/random_login_bonuses/' + id + '/accept')
+        url = config.gb_url + '/random_login_bonuses/' + str(id) + '/accept'
+        auth = crypto.mac(ver, token, secret, 'POST', '/random_login_bonuses/' + str(id) + '/accept')
         code = config.gb_code
         asset = config.file_ts1
         db = config.db_ts1
     else:
-        url = config.jp_url + '/random_login_bonuses/' + id + '/accept'
-        auth = crypto.mac(ver, token, secret, 'POST', '/random_login_bonuses/' + id + '/accept')
+        url = config.jp_url + '/random_login_bonuses/' + str(id) + '/accept'
+        auth = crypto.mac(ver, token, secret, 'POST', '/random_login_bonuses/' + str(id) + '/accept')
         code = config.jp_code
         asset = config.file_ts2
         db = config.db_ts2

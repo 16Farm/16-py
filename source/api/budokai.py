@@ -16,14 +16,14 @@ def entryInfo(ver, os, token, secret, budokai):
     else:
         dua = config.device_agent2
     if ver == 'gb':
-        url = config.gb_url + '/budokais/' + budokai + '/entry'
-        auth = crypto.mac(ver, token, secret, 'GET', '/budokais/' + budokai + '/entry')
+        url = config.gb_url + '/budokais/' + str(budokai) + '/entry'
+        auth = crypto.mac(ver, token, secret, 'GET', '/budokais/' + str(budokai) + '/entry')
         code = config.gb_code
         asset = config.file_ts1
         db = config.db_ts1
     else:
-        url = config.jp_url + '/budokais/' + budokai + '/entry'
-        auth = crypto.mac(ver, token, secret, 'GET', '/budokais/' + budokai + '/entry')
+        url = config.jp_url + '/budokais/' + str(budokai) + '/entry'
+        auth = crypto.mac(ver, token, secret, 'GET', '/budokais/' + str(budokai) + '/entry')
         code = config.jp_code
         asset = config.file_ts2
         db = config.db_ts2
@@ -80,14 +80,14 @@ def tournament(ver, os, token, secret, budokai, friend, motivation, deck):
     else:
         dua = config.device_agent2
     if ver == 'gb':
-        url = config.gb_url + '/budokais/' + budokai + '/tournaments'
-        auth = crypto.mac(ver, token, secret, 'POST', '/budokais/' + budokai + '/tournaments')
+        url = config.gb_url + '/budokais/' + str(budokai) + '/tournaments'
+        auth = crypto.mac(ver, token, secret, 'POST', '/budokais/' + str(budokai) + '/tournaments')
         code = config.gb_code
         asset = config.file_ts1
         db = config.db_ts1
     else:
-        url = config.jp_url + '/budokais/' + budokai + '/tournaments'
-        auth = crypto.mac(ver, token, secret, 'POST', '/budokais/' + budokai + '/tournaments')
+        url = config.jp_url + '/budokais/' + str(budokai) + '/tournaments'
+        auth = crypto.mac(ver, token, secret, 'POST', '/budokais/' + str(budokai) + '/tournaments')
         code = config.jp_code
         asset = config.file_ts2
         db = config.db_ts2
@@ -118,14 +118,14 @@ def startRound(ver, os, token, secret, budokai, roundId, friend, deck):
     else:
         dua = config.device_agent2
     if ver == 'gb':
-        url = config.gb_url + '/budokais/' + budokai + '/tournaments/' + roundId + '/start'
-        auth = crypto.mac(ver, token, secret, 'POST', '/budokais/' + budokai + '/tournaments/' + roundId + '/start')
+        url = config.gb_url + '/budokais/' + str(budokai) + '/tournaments/' + str(roundId) + '/start'
+        auth = crypto.mac(ver, token, secret, 'POST', '/budokais/' + str(budokai) + '/tournaments/' + str(roundId) + '/start')
         code = config.gb_code
         asset = config.file_ts1
         db = config.db_ts1
     else:
-        url = config.jp_url + '/budokais/' + budokai + '/tournaments/' + roundId + '/start'
-        auth = crypto.mac(ver, token, secret, 'POST', '/budokais/' + budokai + '/tournaments/' + roundId + '/start')
+        url = config.jp_url + '/budokais/' + str(budokai) + '/tournaments/' + str(roundId) + '/start'
+        auth = crypto.mac(ver, token, secret, 'POST', '/budokais/' + str(budokai) + '/tournaments/' + str(roundId) + '/start')
         code = config.jp_code
         asset = config.file_ts2
         db = config.db_ts2
@@ -155,14 +155,14 @@ def finishRound(ver, os, token, secret, budokai, roundId, steps, actions, hp, st
     else:
         dua = config.device_agent2
     if ver == 'gb':
-        url = config.gb_url + '/budokais/' + budokai + '/tournaments/' + roundId + '/finish'
-        auth = crypto.mac(ver, token, secret, 'POST', '/budokais/' + budokai + '/tournaments/' + roundId + '/finish')
+        url = config.gb_url + '/budokais/' + str(budokai) + '/tournaments/' + str(roundId) + '/finish'
+        auth = crypto.mac(ver, token, secret, 'POST', '/budokais/' + str(budokai) + '/tournaments/' + str(roundId) + '/finish')
         code = config.gb_code
         asset = config.file_ts1
         db = config.db_ts1
     else:
-        url = config.jp_url + '/budokais/' + budokai + '/tournaments/' + roundId + '/finish'
-        auth = crypto.mac(ver, token, secret, 'POST', '/budokais/' + budokai + '/tournaments/' + roundId + '/finish')
+        url = config.jp_url + '/budokais/' + str(budokai) + '/tournaments/' + str(roundId) + '/finish'
+        auth = crypto.mac(ver, token, secret, 'POST', '/budokais/' + str(budokai) + '/tournaments/' + str(roundId) + '/finish')
         code = config.jp_code
         asset = config.file_ts2
         db = config.db_ts2
