@@ -9,5 +9,6 @@
         "ios": ""
     },
     "max_mass_rerolls": 10,
-    "discord": "https://discordapp.com/invite/nrjvK2J"
+    "discord": "https://discordapp.com/invite/nrjvK2J",
+    "valuables": ["1002180", "1002380", "2000260", "2000270", "1003880", "1002420", "1000810", "1002030", "1003700", "1003460", "1002430", "1003900", "2000160", "1002280", "1001100", "1013400", "1002520"]
 }
