@@ -1,11 +1,11 @@
 {
     "sixteen": "2.0.5",
     "gb_version": {
-        "android": "4.11.1-45ebeb27335b4384febe871302a47c948c2a465b349af85de700c0b024386482",
+        "android": "4.11.2-b9600e015b6698b4985fcaba02fa7b8ecf91840061ad591dca15c9b6c2c39334",
         "ios": ""
     },
     "jp_version": {
-        "android": "4.11.2-d5702a68fc60f03317cab4c2e3aaedf560c3075ac22c67d696471c066a6fe56d",
+        "android": "4.11.3-2ae5594587276d353cf286d5c1191bdac07e681d8ca03a68f9ed52a18b829ee2",
         "ios": ""
     },
     "max_mass_rerolls": 10,
