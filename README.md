@@ -29,6 +29,7 @@ found by renzy on <a href="https://twitter.com/dbzspace/status/11063161126382100
 this wasn't hard to fix just that we had to get it (at the time) by sniffing requests that included it or by Renzy's way- getting it from the updated app's "lib.so"
 <br>
 <br>
+
 - <b>why split account OS?</b>
 <br>
 first reason was to send a proper request "User-agent"... all other bots were sending "Browser User-agents" instead of common User-agents used in "app code requests".
