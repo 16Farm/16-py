@@ -9,7 +9,7 @@ e.g. "3001" remained on global while japan changed to "443"
 <br>
 the solution to this was getting these initially before use from the endpoint "/ping" just like the game does.
 <br>
-they changed japans hypertext protocol from `HTTP` to `HTTPS` (explains the port change) which broke any bot that makes `HTTP` requests. (<a href="https://github.com/FlashChaser/Open-Source-Battle-Bot/blob/development/commands.py#L103">seen here</a>)
+they changed japans hypertext protocol from "HTTP" to "HTTPS" (explains the port change) which broke any bot that makes "HTTP" requests. (<a href="https://github.com/FlashChaser/Open-Source-Battle-Bot/blob/development/commands.py#L103">seen here</a>)
 <br>
 <br>
 endpoints can also be changed on one version while the other remains on another version.
