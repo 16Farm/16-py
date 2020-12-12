@@ -1,5 +1,7 @@
 # android-16-pc
 a project i worked on to learn python.
+<br>
+<img src="https://cdn.discordapp.com/attachments/668875622822707203/785543285028421703/unknown.png">
 # Comparison
 - <b>why split the game versions?</b>
 <br>
